@@ -1,0 +1,282 @@
+/* ==========================================================================
+   VRINDA RESORT - LUXURY WEDDING DESTINATION DESIGN SYSTEM
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --primary-gold: #c6922b;
+  --gold-light: #e6bd65;
+  --gold-lighter: #faeecd;
+  --gold-dark: #986b16;
+  --gold-glow: rgba(198, 146, 43, 0.25);
+  
+  --regal-green: #0e2b1f;
+  --regal-green-light: #164030;
+  --regal-green-dark: #071912;
+  
+  --bg-cream: #faf6f0;
+  --bg-sand: #f3ece1;
+  --bg-white: #ffffff;
+  
+  --text-dark: #1b2420;
+  --text-body: #3c4842;
+  --text-muted: #6f7d76;
+  --text-gold: #b3801f;
+  
+  --border-gold: rgba(198, 146, 43, 0.28);
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 43, 31, 0.08);
+  --shadow-lg: 0 16px 36px rgba(14, 43, 31, 0.12);
+  --shadow-gold: 0 8px 28px rgba(198, 146, 43, 0.22);
+
+  /* Fonts */
+  --font-serif-royal: 'Cinzel', serif;
+  --font-serif-elegant: 'Playfair Display', serif;
+  --font-subheading: 'Cormorant Garamond', serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(230, 189, 101, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(14, 43, 31, 0.04) 0%, transparent 40%);
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--regal-green-dark);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.font-royal {
+  font-family: var(--font-serif-royal);
+}
+
+.font-elegant {
+  font-family: var(--font-serif-elegant);
+}
+
+.font-subheading {
+  font-family: var(--font-subheading);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Luxury Divider */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0.8rem auto 1.5rem auto;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+}
+
+.gold-divider .diamond {
+  width: 7px;
+  height: 7px;
+  background-color: var(--primary-gold);
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px var(--primary-gold);
+}
+
+/* Section Header Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--primary-gold);
+  background: rgba(198, 146, 43, 0.1);
+  border: 1px solid var(--border-gold);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-serif-royal);
+  font-size: 2rem;
+  color: var(--regal-green);
+  letter-spacing: 0.5px;
+}
+
+.section-subtitle {
+  font-family: var(--font-subheading);
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-style: italic;
+  max-width: 650px;
+  margin: 0.25rem auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .section-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--primary-gold) 100%);
+  color: var(--regal-green-dark);
+  border: 1px solid var(--gold-light);
+  box-shadow: 0 4px 15px rgba(198, 146, 43, 0.3);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ebd17f 0%, #a8791e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(198, 146, 43, 0.45);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-emerald {
+  background: var(--regal-green);
+  color: #ffffff;
+  border: 1px solid rgba(230, 189, 101, 0.3);
+}
+
+.btn-emerald:hover {
+  background: var(--regal-green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(14, 43, 31, 0.3);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: var(--primary-gold);
+  border: 1.5px solid var(--primary-gold);
+}
+
+.btn-outline-gold:hover {
+  background: rgba(198, 146, 43, 0.1);
+  color: var(--gold-dark);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(198, 146, 43, 0.5); }
+  50% { box-shadow: 0 0 0 12px rgba(198, 146, 43, 0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 146, 43, 0.2);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
