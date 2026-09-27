@@ -22,29 +22,29 @@ export const resortConfig = {
       subtitle: "Expansive lush green landscape with royal mandap setup under the stars",
       tag: "Open Air Grandeur"
     },
+    // {
+    //   id: 3,
+    //   image: "/images/photo-3.jpeg",
+    //   title: "Gala Poolside & Cocktail Arena",
+    //   subtitle: "Fairytale night lighting & illuminated poolside for Sangeet, Haldi & Receptions",
+    //   tag: "Evening Celebrations"
+    // },
     {
       id: 3,
-      image: "/images/photo-3.jpeg",
-      title: "Gala Poolside & Cocktail Arena",
-      subtitle: "Fairytale night lighting & illuminated poolside for Sangeet, Haldi & Receptions",
-      tag: "Evening Celebrations"
-    },
-    {
-      id: 4,
       image: "/images/photo-4.jpeg",
       title: "Royal Bridal Suites & VIP Rooms",
       subtitle: "Plush dressing lounges and luxury guest rooms for family & entourage comfort",
       tag: "Luxury Stay"
     },
     {
-      id: 5,
+      id: 4,
       image: "/images/photo-5.jpeg",
       title: "Royal Bridal Suites & VIP Rooms",
       subtitle: "Plush dressing lounges and luxury guest rooms for family & entourage comfort",
       tag: "Luxury Stay"
     },
     {
-      id: 6,
+      id: 5,
       image: "/images/photo-6.jpeg",
       title: "Royal Bridal Suites & VIP Rooms",
       subtitle: "Plush dressing lounges and luxury guest rooms for family & entourage comfort",
