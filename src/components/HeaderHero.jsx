@@ -103,9 +103,9 @@ export default function HeaderHero() {
           </p>
 
           <div className="hero-cta-group">
-            <a href="#book-now" className="btn btn-gold hero-btn">
+            {/* <a href="#book-now" className="btn btn-gold hero-btn">
               <Calendar size={18} /> Book Your Wedding Date
-            </a>
+            </a> */}
             <a 
               href={`tel:${resortConfig.contact.primaryPhone.replace(/\s+/g, '')}`} 
               className="btn btn-outline-gold hero-btn"

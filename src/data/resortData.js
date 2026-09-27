@@ -115,16 +115,16 @@ export const resortConfig = {
   ],
 
   contact: {
-    primaryPhone: "+91 98119 81885",
-    secondaryPhone: "+91 87288 64545",
-    whatsappNumber: "919811981885",
+    primaryPhone: "+91 9220824550",
+    secondaryPhone: "+91 98119 81885",
+    whatsappNumber: "9220824550",
     email: "vrinda.resort26@gmail.com",
     address: "Vrinda-Resort, Village Doburji, Marara, Gurdaspur district, Punjab 143525",
     operatingHours: "Open Daily: 9:00 AM – 9:00 PM for Site Visits & Inquiries",
     googleMapsUrl: "https://maps.app.goo.gl/bJEqnMNAdMFCfcM7A",
     team: [
       {
-        phone: "+91 87288 64545"
+        phone: "+91 92208 24550"
       },
       {
         phone: "+91 98119 81885"

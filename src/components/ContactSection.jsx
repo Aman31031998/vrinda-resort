@@ -44,7 +44,7 @@ export default function ContactSection() {
           {/* Contact Persons Cards */}
           <div className="contact-column team-column">
             <h3 className="column-title">
-              <User size={20} className="col-icon" /> Direct Manager Contacts
+              <User size={20} className="col-icon" /> Contacts
             </h3>
 
             <div className="team-cards-list">

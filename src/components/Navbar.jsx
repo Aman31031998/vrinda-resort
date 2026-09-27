@@ -71,9 +71,9 @@ export default function Navbar() {
 
           {/* Action CTA */}
           <div className="nav-actions">
-            <a href="#book-now" className="btn btn-gold nav-cta">
+            {/* <a href="#book-now" className="btn btn-gold nav-cta">
               <Calendar size={16} /> Book Date
-            </a>
+            </a> */}
             
             {/* Mobile Menu Trigger */}
             <button 
@@ -186,8 +186,9 @@ export default function Navbar() {
         }
         .nav-container {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          align-items: stretch;
+          // justify-content: space-between;
+          gap: 90px;
           padding-top: 0.75rem;
           padding-bottom: 0.75rem;
         }
