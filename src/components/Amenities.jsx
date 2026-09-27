@@ -10,7 +10,6 @@ import {
   Music,
   Users,
   Maximize,
-  Home,
   CheckCircle
 } from 'lucide-react';
 import { resortConfig } from '../data/resortData';
@@ -27,7 +26,7 @@ const iconMap = {
   Music: Music,
 };
 
-const statIcons = [Users, Maximize, Home, Car];
+const statIcons = [Users, Maximize, UtensilsCrossed, Car];
 
 export default function Amenities() {
   return (
@@ -58,10 +57,7 @@ export default function Amenities() {
         {/* Section Header */}
         <div className="section-header">
           <span className="section-tag">Grand Infrastructure</span>
-          <h2 className="section-title">World-Class Venue & Amenities</h2>
-          <p className="section-subtitle">
-            Every corner of Vrinda Resort is sculpted to host magnificent Indian weddings and cherished festivities
-          </p>
+          <h2 className="section-title">Every corner of Vrinda Resort is sculpted to host magnificent Indian weddings and cherished festivities</h2>
           <div className="gold-divider">
             <div className="diamond"></div>
           </div>

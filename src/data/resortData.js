@@ -54,10 +54,10 @@ export const resortConfig = {
 
   // Key Venue Metrics
   stats: [
-    { value: "1,500+", label: "Guest Capacity", desc: "Spacious seating & floating" },
-    { value: "45,000+", label: "Sq. Ft. Area", desc: "Lawn & Banquet combined" },
-    { value: "25+", label: "Luxury AC Rooms", desc: "For family & guest stay" },
-    { value: "200+", label: "Car Parking", desc: "Dedicated valet parking" },
+    { value: "700+", label: "Guest Capacity", desc: "Spacious seating & floating" },
+    { value: "50,000+", label: "Sq. Ft. Area", desc: "Lawn & Banquet combined" },
+    { value: "Catering service"},
+    { value: "Ample Car Parking" },
   ],
 
   // Resort Key Amenities & Features
@@ -67,11 +67,11 @@ export const resortConfig = {
       title: "Royal Banquet Hall",
       description: "Pillar-less high ceiling air-conditioned banquet hall with royal gold decor and state-of-the-art acoustics."
     },
-    {
-      icon: "Trees",
-      title: "Sprawling Green Lawn",
-      description: "Manicured lush lawns with natural foliage, perfect for grand Mandaps, stage setups, and buffet lines."
-    },
+    // {
+    //   icon: "Trees",
+    //   title: "Sprawling Green Lawn",
+    //   description: "Manicured lush lawns with natural foliage, perfect for grand Mandaps, stage setups, and buffet lines."
+    // },
     {
       icon: "BedDouble",
       title: "Luxury Bridal Suites & AC Rooms",
@@ -82,16 +82,16 @@ export const resortConfig = {
       title: "Gourmet Catering Infrastructure",
       description: "Massive modern hygienic kitchens catering to multi-cuisine vegetarian and live counters."
     },
-    {
-      icon: "Sparkles",
-      title: "Ambient & Theme Lighting",
-      description: "Customizable fairy lights, chandelier dimmers, stage spotlights, and poolside illuminations."
-    },
-    {
-      icon: "Car",
-      title: "Ample Valet Parking",
-      description: "Safe, illuminated 200+ car parking area with seamless security and valet assistance."
-    },
+    // {
+    //   icon: "Sparkles",
+    //   title: "Ambient & Theme Lighting",
+    //   description: "Customizable fairy lights, chandelier dimmers, stage spotlights, and poolside illuminations."
+    // },
+    // {
+    //   icon: "Car",
+    //   title: "Ample Valet Parking",
+    //   description: "Safe, illuminated 200+ car parking area with seamless security and valet assistance."
+    // },
     {
       icon: "ShieldCheck",
       title: "24/7 Power Backup & Security",
@@ -124,13 +124,9 @@ export const resortConfig = {
     googleMapsUrl: "https://maps.app.goo.gl/bJEqnMNAdMFCfcM7A",
     team: [
       {
-        name: "Jagjeevan Saini",
-        role: "Owner",
         phone: "+91 87288 64545"
       },
       {
-        name: "Renu Saini",
-        role: "Owner",
         phone: "+91 98119 81885"
       }
     ]
